@@ -228,7 +228,7 @@ ${n.map(({variableName:r,uniqueLocalName:o})=>`  reactHotLoader.register(${r}, "
 `,T.jsx(t.p,{children:"🌲 Merry Christmas! 🎅"}),`
 `,T.jsxs(t.ul,{children:[`
 `,T.jsxs(t.li,{children:["Added ",T.jsx(t.code,{children:"useSearchParams()"})," hook"]}),`
-`,T.jsxs(t.li,{children:["Added ",T.jsx(t.code,{children:"useSearchParams()"})," hook"]}),`
+`,T.jsxs(t.li,{children:["Added ",T.jsx(t.code,{children:"useSearchParam()"})," hook"]}),`
 `]})]})}function c1(e={}){const{wrapper:t}={...Kl(),...e.components};return t?T.jsx(t,{...e,children:T.jsx(Xd,{...e})}):Xd(e)}c1.displayName="MDXContent";const zE=Object.freeze(Object.defineProperty({__proto__:null,default:c1,filepath:ME,frontmatter:BE,title:$E},Symbol.toStringTag,{value:"Module"})),UE="README.md",VE="wouter-search",qE=void 0;function Yd(e){const t={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...Kl(),...e.components};return T.jsxs(T.Fragment,{children:[T.jsx(t.h1,{children:"wouter-search"}),`
 `,T.jsxs(t.p,{children:["Provide ",T.jsx(t.code,{children:"useSearchParams()"})," and ",T.jsx(t.code,{children:"useSearchParam()"})," hooks for ",T.jsx(t.a,{href:"https://github.com/molefrog/wouter",children:"wouter"}),"."]}),`
 `,T.jsxs(t.p,{children:["This project is based on ",T.jsx(t.a,{href:"https://github.com/junwen-k",children:"junwen-k"}),"'s ",T.jsx(t.a,{href:"https://github.com/molefrog/wouter/pull/391",children:"initial work"}),"."]}),`
