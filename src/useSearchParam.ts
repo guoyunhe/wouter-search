@@ -1,13 +1,16 @@
 import { useCallback, useRef } from 'react';
-import { useSearchParams } from './useSearchParams';
+import { SetSearchParams } from './useSearchParams';
 
 export type SetSearchParam = (
   nextInit: string | null | ((prev: string | null) => string | null),
   options?: { replace?: boolean; state?: any },
 ) => void;
 
-export function useSearchParam(key: string): [string | null, SetSearchParam] {
-  const [searchParams, setSearchParams] = useSearchParams();
+export function useSearchParam(
+  key: string,
+  searchParams: URLSearchParams,
+  setSearchParams: SetSearchParams,
+): [string | null, SetSearchParam] {
   const searchParam = searchParams.get(key);
 
   const setSearchParamRef = useRef<SetSearchParam>();

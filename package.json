@@ -1,5 +1,6 @@
 {
   "name": "wouter-search",
+  "version": "1.0.1",
   "description": "Provide useSearchParams() and useSearchParam() hooks for wouter",
   "keywords": [
     "react",
@@ -70,6 +71,5 @@
     "doc": {
       "basename": "/wouter-search/"
     }
-  },
-  "version": "1.0.1"
+  }
 }

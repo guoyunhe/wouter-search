@@ -58,10 +58,11 @@ function MyPage() {
 A simple wrapper around `useSearchParams`. By giving a key/name, you can control a specific search parameter straight-forward.
 
 ```js
-import { useSearchParam } from 'wouter-search';
+import { useSearchParam, useSearchParams } from 'wouter-search';
 
 function MyPage() {
-  const [query, setQuery] = useSearchParam('query');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [query, setQuery] = useSearchParam('query', searchParams, setSearchParams);
 
   return <input onChange={(e) => setQuery(e.target.value, { replace: true })} />;
 }
