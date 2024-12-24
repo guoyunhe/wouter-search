@@ -16,6 +16,7 @@
     "url": "git+https://github.com/guoyunhe/wouter-search.git"
   },
   "funding": "https://github.com/sponsors/guoyunhe",
+  "license": "MIT",
   "author": {
     "name": "Guo Yunhe",
     "email": "i@guoyunhe.me"
