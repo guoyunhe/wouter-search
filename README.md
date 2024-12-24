@@ -1,6 +1,6 @@
 # wouter-search
 
-Provide `useSearchParams()` and `useSearchParam()` hooks for [wouter](https://github.com/molefrog/wouter).
+Provide `useSearchParams()`, `useSearchParam()` and `useSearchParamJson()` hooks for [wouter](https://github.com/molefrog/wouter).
 
 This project is based on [junwen-k](https://github.com/junwen-k)'s [initial work](https://github.com/molefrog/wouter/pull/391).
 
@@ -8,7 +8,6 @@ Note:
 
 - Require wouter 3.x
 - Require React 16.8+. preact is **NOT** supported at the moment. (open an issue if you need it!)
-- Search parameters are considered as strings. You have to write your own wrapper if you need to process JSON. (open an issue if you really need it!)
 
 ## Installation
 
@@ -53,7 +52,7 @@ function MyPage() {
 }
 ```
 
-### useSearchParam(key: string)
+### useSearchParam()
 
 A simple wrapper around `useSearchParams`. By giving a key/name, you can control a specific search parameter straight-forward.
 
@@ -65,5 +64,25 @@ function MyPage() {
   const [query, setQuery] = useSearchParam('query', searchParams, setSearchParams);
 
   return <input onChange={(e) => setQuery(e.target.value, { replace: true })} />;
+}
+```
+
+### useSearchParamJson()
+
+If your search parameter contains JSON data, `useSearchParamJson()` will make your life much easier!
+
+```js
+import { useSearchParamJson, useSearchParams } from 'wouter-search';
+
+function MyPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [solution, setSolution] = useSearchParamJson('solution', searchParams, setSearchParams);
+
+  return (
+    <div>
+      <h1>{solution.name}</h1>
+      <p>{solution.description}</p>
+    </div>
+  );
 }
 ```

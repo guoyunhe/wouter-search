@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 - 2024-12-25
+
+- Added `useSearchParamJson()` hook
+
 ## 1.0.2 - 2024-12-24
 
 - Fixed multiple `useSearchParam` override each other
