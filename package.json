@@ -38,9 +38,6 @@
   "stylelint": {
     "extends": "stylelint-config-rive"
   },
-  "dependencies": {
-    "classnames": "^2.5.1"
-  },
   "devDependencies": {
     "@mdx-js/react": "^3.1.0",
     "@testing-library/react": "^16.1.0",
@@ -53,10 +50,11 @@
     "react-dom": "^18.2.0",
     "rive": "^2.0.33",
     "typescript": "^5.0.0",
-    "whatwg-fetch": "^3.6.20"
+    "wouter": "^3.3.5"
   },
   "peerDependencies": {
-    "react": "^18.0.0 || ^17.0.0 || ^16.8.0"
+    "react": "^19.0.0 || ^18.0.0 || ^17.0.0 || ^16.8.0",
+    "wouter": "^3.3.5"
   },
   "rive": {
     "template": "react",
