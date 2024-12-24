@@ -5,4 +5,4 @@
 🌲 Merry Christmas! 🎅
 
 - Added `useSearchParams()` hook
-- Added `useSearchParams()` hook
+- Added `useSearchParam()` hook
