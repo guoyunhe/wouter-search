@@ -1,0 +1,67 @@
+{
+  "homepage": "https://github.com/guoyunhe/wouter-search#readme",
+  "bugs": {
+    "url": "https://github.com/guoyunhe/wouter-search/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoyunhe/wouter-search.git"
+  },
+  "funding": "https://github.com/sponsors/guoyunhe",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rive build",
+    "build:watch": "rive build --watch",
+    "lint": "rive lint",
+    "lint:fix": "rive lint --fix",
+    "start": "rive start",
+    "test": "rive test",
+    "test:ui": "rive test --ui",
+    "test:watch": "rive test --watch"
+  },
+  "prettier": "prettier-config-rive",
+  "eslintConfig": {
+    "extends": "eslint-config-rive/react"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-rive"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^3.1.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^20.17.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "react": "^18.2.0",
+    "react-doc-ui": "^2.2.6",
+    "react-dom": "^18.2.0",
+    "rive": "^2.0.33",
+    "typescript": "^5.0.0",
+    "whatwg-fetch": "^3.6.20"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^17.0.0 || ^16.8.0"
+  },
+  "rive": {
+    "template": "react",
+    "doc": {
+      "basename": "/wouter-search/"
+    }
+  }
+}
