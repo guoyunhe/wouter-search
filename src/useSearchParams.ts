@@ -13,12 +13,15 @@ export function useSearchParams(): [URLSearchParams, SetSearchParams] {
   const search = useSearch();
   const searchParams = useMemo(() => new URLSearchParams(search), [search]);
 
+  // cached value before next render, so you can call setSearchParams multiple times
+  let tempSearchParams = searchParams;
+
   const setSearchParamsRef = useRef<SetSearchParams>();
   setSearchParamsRef.current = (nextInit, options?: { replace?: boolean; state?: any }) => {
-    const newSearchParams = new URLSearchParams(
-      typeof nextInit === 'function' ? nextInit(searchParams) : nextInit,
+    tempSearchParams = new URLSearchParams(
+      typeof nextInit === 'function' ? nextInit(tempSearchParams) : nextInit,
     );
-    navigate('?' + newSearchParams, options);
+    navigate('?' + tempSearchParams, options);
   };
 
   const setSearchParams = useCallback<SetSearchParams>(
