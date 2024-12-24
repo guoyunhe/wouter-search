@@ -24,6 +24,8 @@ Allow you to get and set all search parameters. The API is similar but not the s
 The first returned value is a `URLSearchParams` object and the second returned value is a setter that accepts a `URLSearchParams` object with options.
 
 ```js
+import { useSearchParams } from 'wouter-search';
+
 function MyPage() {
   const [searchParams, setSearchParams] = useSearchParams();
 

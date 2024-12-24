@@ -1,4 +1,12 @@
 {
+  "name": "wouter-search",
+  "description": "Provide useSearchParams() and useSearchParam() hooks for wouter",
+  "keywords": [
+    "react",
+    "react-router",
+    "wouter",
+    "search-params"
+  ],
   "homepage": "https://github.com/guoyunhe/wouter-search#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/wouter-search/issues"
