@@ -245,7 +245,9 @@ ${n.map(({variableName:r,uniqueLocalName:o})=>`  reactHotLoader.register(${r}, "
 `,T.jsx(t.h3,{children:"useSearchParams()"}),`
 `,T.jsxs(t.p,{children:["Allow you to get and set all search parameters. The API is similar but not the same to ",T.jsx(t.a,{href:"https://api.reactrouter.com/v7/functions/react_router.useSearchParams.html",children:"react-router's"}),`.
 The first returned value is a `,T.jsx(t.code,{children:"URLSearchParams"})," object and the second returned value is a setter that accepts a ",T.jsx(t.code,{children:"URLSearchParams"})," object with options."]}),`
-`,T.jsx(t.pre,{children:T.jsx(t.code,{className:"language-js",children:`function MyPage() {
+`,T.jsx(t.pre,{children:T.jsx(t.code,{className:"language-js",children:`import { useSearchParams } from 'wouter-search';
+
+function MyPage() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   return (
