@@ -22,7 +22,7 @@ npm install --save wouter-search
 Allow you to get and set all search parameters. The API is similar but not the same to [react-router's](https://api.reactrouter.com/v7/functions/react_router.useSearchParams.html).
 The first returned value is a `URLSearchParams` object and the second returned value is a setter that accepts a `URLSearchParams` object with options.
 
-```js
+```jsx
 import { useSearchParams } from 'wouter-search';
 
 function MyPage() {
@@ -56,7 +56,7 @@ function MyPage() {
 
 A simple wrapper around `useSearchParams`. By giving a key/name, you can control a specific search parameter straight-forward.
 
-```js
+```jsx
 import { useSearchParam, useSearchParams } from 'wouter-search';
 
 function MyPage() {
@@ -71,7 +71,7 @@ function MyPage() {
 
 If your search parameter contains JSON data, `useSearchParamJson()` will make your life much easier!
 
-```js
+```jsx
 import { useSearchParamJson, useSearchParams } from 'wouter-search';
 
 function MyPage() {
