@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2024-12-25
+
+- Changed to ESM-only package
+
 ## 1.1.0 - 2024-12-25
 
 - Added `useSearchParamJson()` hook
