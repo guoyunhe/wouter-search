@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
@@ -14,17 +10,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": [
-      "node",
-      "rive/globals"
-    ],
+    "types": ["node", "rive/globals"],
     "jsx": "react-jsx"
   },
-  "exclude": [
-    ".rive",
-    "build",
-    "coverage",
-    "dist",
-    "node_modules"
-  ]
+  "exclude": [".rive", "build", "coverage", "dist", "node_modules"]
 }
