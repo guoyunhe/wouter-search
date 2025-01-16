@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - 2025-01-16
+
+- Fixed location path lost issue
+
 ## 1.2.0 - 2024-12-25
 
 - Changed to ESM-only package
