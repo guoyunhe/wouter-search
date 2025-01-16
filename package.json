@@ -1,6 +1,6 @@
 {
   "name": "wouter-search",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Provide useSearchParams(), useSearchParam() and useSearchParamJson() hooks for wouter",
   "keywords": [
     "react",
