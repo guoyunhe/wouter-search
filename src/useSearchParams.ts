@@ -8,7 +8,7 @@ export type SetSearchParams = (
 ) => void;
 
 export function useSearchParams(): [URLSearchParams, SetSearchParams] {
-  const [, navigate] = useLocation();
+  const [location, navigate] = useLocation();
 
   const search = useSearch();
   const searchParams = useMemo(() => new URLSearchParams(search), [search]);
@@ -21,7 +21,7 @@ export function useSearchParams(): [URLSearchParams, SetSearchParams] {
     tempSearchParams = new URLSearchParams(
       typeof nextInit === 'function' ? nextInit(tempSearchParams) : nextInit,
     );
-    navigate('?' + tempSearchParams, options);
+    navigate(location + '?' + tempSearchParams, options);
   };
 
   const setSearchParams = useCallback<SetSearchParams>(
