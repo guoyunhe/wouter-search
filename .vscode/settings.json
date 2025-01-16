@@ -5,15 +5,12 @@
     "typescript",
     "typescriptreact"
   ],
-  "stylelint.validate": [
-    "css",
-    "less",
-    "scss"
-  ],
+  "stylelint.validate": ["css", "less", "scss"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -49,5 +46,8 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    "*.ejs": "plaintext"
   }
 }
