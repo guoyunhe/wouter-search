@@ -38,11 +38,13 @@ function MyPage() {
         // push new history entry
         setSearchParams((prev) => {
           prev.set('foo', 'bar');
+          return prev;
         });
         // or replace history entry
         setSearchParams(
           (prev) => {
             prev.set('foo', 'bar');
+            return prev;
           },
           {
             replace: true,
