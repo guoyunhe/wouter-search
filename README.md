@@ -1,5 +1,9 @@
 # wouter-search
 
+![Version](https://img.shields.io/npm/v/wouter-search)
+![Downloads](https://img.shields.io/npm/dw/wouter-search)
+![Bundle size](https://img.shields.io/bundlephobia/minzip/wouter-search)
+
 Provide `useSearchParams()`, `useSearchParam()` and `useSearchParamJson()` hooks for [wouter](https://github.com/molefrog/wouter).
 
 This project is based on [junwen-k](https://github.com/junwen-k)'s [initial work](https://github.com/molefrog/wouter/pull/391).
