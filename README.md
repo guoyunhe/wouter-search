@@ -11,7 +11,7 @@ This project is based on [junwen-k](https://github.com/junwen-k)'s [initial work
 Note:
 
 - Require wouter 3.x
-- Require React 16.8+. preact is **NOT** supported at the moment. (open an issue if you need it!)
+- Require React 16.8+. Preact should work via [preact/compat](https://preactjs.com/guide/v10/switching-to-preact/).
 
 ## Installation
 
