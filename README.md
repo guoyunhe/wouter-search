@@ -4,14 +4,14 @@
 ![Downloads](https://img.shields.io/npm/dw/wouter-search)
 ![Bundle size](https://img.shields.io/bundlephobia/minzip/wouter-search)
 
-Provide `useSearchParams()`, `useSearchParam()` and `useSearchParamJson()` hooks for [wouter](https://github.com/molefrog/wouter).
+Provide `useSearchParam()` and `useSearchParamJson()` hooks for [wouter](https://github.com/molefrog/wouter).
 
 This project is based on [junwen-k](https://github.com/junwen-k)'s [initial work](https://github.com/molefrog/wouter/pull/391).
 
 Note:
 
-- Require wouter 3.x
-- Require React 16.8+. Preact should work via [preact/compat](https://preactjs.com/guide/v10/switching-to-preact/).
+- Require `wouter` 3.4+
+- Require `react` 16.8+. `preact` should work via [preact/compat](https://preactjs.com/guide/v10/switching-to-preact/).
 
 ## Installation
 
@@ -23,40 +23,7 @@ npm install --save wouter-search
 
 ### useSearchParams()
 
-Allow you to get and set all search parameters. The API is similar but not the same to [react-router's](https://api.reactrouter.com/v7/functions/react_router.useSearchParams.html).
-The first returned value is a `URLSearchParams` object and the second returned value is a setter that accepts a `URLSearchParams` object with options.
-
-```jsx
-import { useSearchParams } from 'wouter-search';
-
-function MyPage() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  return (
-    <button
-      onClick={() => {
-        // push new history entry
-        setSearchParams((prev) => {
-          prev.set('foo', 'bar');
-          return prev;
-        });
-        // or replace history entry
-        setSearchParams(
-          (prev) => {
-            prev.set('foo', 'bar');
-            return prev;
-          },
-          {
-            replace: true,
-          },
-        );
-      }}
-    >
-      foobar
-    </button>
-  );
-}
-```
+It is now part of `wouter`! [Read the document](https://github.com/molefrog/wouter/tree/use-search-params-docs#usesearchparams-search-parameters)
 
 ### useSearchParam()
 
