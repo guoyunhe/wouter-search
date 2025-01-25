@@ -1,5 +1,5 @@
 import { useCallback, useRef } from 'react';
-import { SetSearchParams } from './useSearchParams';
+import type { SetSearchParams } from 'wouter';
 
 export type SetSearchParam = (
   nextInit: string | null | ((prev: string | null) => string | null),

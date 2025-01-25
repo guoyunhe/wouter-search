@@ -60,11 +60,11 @@
     "react-dom": "^18.3.1",
     "rive": "^3.0.0",
     "typescript": "^5.7.2",
-    "wouter": "^3.3.5"
+    "wouter": "^3.4.0"
   },
   "peerDependencies": {
     "react": "^19.0.0 || ^18.0.0 || ^17.0.0 || ^16.8.0",
-    "wouter": "^3.3.5"
+    "wouter": "^3.4.0"
   },
   "rive": {
     "template": "react",

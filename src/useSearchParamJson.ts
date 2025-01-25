@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useRef } from 'react';
+import type { SetSearchParams } from 'wouter';
 import { useSearchParam } from './useSearchParam';
-import { SetSearchParams } from './useSearchParams';
 
 export type SetSearchParamJson<T> = (
   nextInit: T | ((prev: T) => T),
